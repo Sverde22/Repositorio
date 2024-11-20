@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>A W O L N A T I O N</title>
 	</head>
 	<body>
 		<div class="Head">
@@ -14,9 +14,11 @@
 		<li><a href="$">Home</a></li>
 		<li><a href="$">About</a></li>
 		<li><a href="$">News</a></li>
-		<li><a href="$">Playlist</a></li>
+		<li><a href="Playlist">Playlist</a></li>
 	</ul>
+	<div class="Back">
 	<h1 class="Band"> Awolnation</h1>
+    </div>
 	<footer>
 		<p>Welcome to the Band Website</p>
 	</footer>
@@ -27,19 +29,57 @@
 		background-clip: text;
 		-webkit-text-fill-color: transparent;
 		background-color: rgba(1, 197, 135, 0.984);
+		padding-top: 200px;
+	    padding-bottom: 200px;
+	    text-transform: uppercase;
+	}
+	.Back{
+		text-align: center;
+		font-size: larger;	
 	}
 ul{
 	display: flex;
     justify-content: space-between;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	margin: 0%;
+	padding-right: 20px;
+	list-style: none;
 	background: rgb(27, 45, 39);
 }
 ul a{
-	color: aquamarine;
+	background-image:  linear-gradient(rgba(1, 197, 135, 0.984), #ecf00d);
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-color: rgba(1, 197, 135, 0.984);
+	text-transform: uppercase;
+	font-size: larger;
+	font-weight: bold;
+	text-decoration: none;
 }
 .Head{
 	display: flex;
 	flex-direction: column;
-	flex-grow: 2 4 2;
+	background: radial-gradient(rgb(27, 45, 39) 300px,rgb(96, 201, 166));
+}
+footer{
+	padding-top: 50px;
+	padding-bottom: 50px;
+	text-transform: uppercase;
+	text-spacing-trim: 20%;
+	color: #4fa83d;
+	background: rgb(27, 45, 39);
+	text-align: center;
+	font-size: larger;
+	font-weight: bold;
+	text-decoration: none;
+}
+html body{
+width: 100%;
+height: 100%;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
 }
 </style>
 	</body>
