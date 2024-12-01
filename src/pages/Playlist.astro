@@ -1,4 +1,7 @@
 <!doctype html>
+---
+const song= ["Sail", "Kill Your Heores", "Not Your Fault", "Panoramic View", "I Am", "All I Need", "Table For One"];
+---
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
@@ -9,34 +12,68 @@
 		<title>Astro</title>
 	</head>
 	<body><div class="Head">
-        <ul>
+        <ul class="ul1">
             <li><a href="/">Home</a></li>
             <li><a href="$">About</a></li>
-            <li><a href="$">News</a></li>
+            <li><a href="/News">News</a></li>
             <li><a href="/Playlist">Playlist</a></li>
         </ul>
-    </div>
+    <div class="Bod">
+        <h1 class="awol">Awolnation Songs</h1>
     <div class="songs">
-    <p class="song1">Sail</p>
-    <p class="song2">Kill Your Heores</p>
-    <p class="song3">Not Your Fault</p>
-    <p class="song4">Panoramic View</p>
-    <p class="song5">I Am</p>
-    <p class="song6">All I Need</p>
-    <p class="song7">Table For One</p>
-    <p class="insert">Insert Your Song</p>
+    <ul class="awollist">
+        {song.map((song) => (<li>{song}</li>))}
+    </ul>
+    </div>
+    <button id="button1">Add your Song Bro</button>
+    <input type="text" class="addsong" placeholder="Add your Song Bro" />
     </div>
         <footer>
             <p>Welcome to the Band Website</p>
         </footer>
+    </div>
+    <script src="/src/Java/Java.js">
+
+        </script>
         <style>
-    .songs{
-      display: grid;
-      border: 2rem,solid,rgb(96, 201, 166);
+    .Bod{
+        text-align: center;
+		font-size: larger;
+		background-image: url(awol.jpg);
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-attachment: fixed;
+		opacity: 50%;
     }
-    .insert{
-        grid-row: 1 / 9;
-        grid-column: 2;
+    .awol{
+    margin: 0%;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: rgb(16, 16, 12) 1px 0 10px;
+    color: #fbfb1e;
+    background: rgba(17, 22, 20, 0.4);
+    }
+    .awollist{
+        list-style: none;
+        margin: 0%;
+        padding-bottom: 50px;
+        padding-top: 50px;
+    }
+    .songs{
+      color: #fbfb1e;
+      text-transform: uppercase;
+      font-weight: bold;
+      text-shadow: rgb(222, 237, 19) 3px 0 10px;
+      background: rgba(17, 22, 20, 0.4);
+    }
+    .button1{
+      color: #fbfb1e;
+      text-transform: uppercase;
+      font-weight: bold;
+      text-shadow: rgb(222, 237, 19) 3px 0 10px;
     }
     .Band{
 		background-image:  linear-gradient(rgba(1, 197, 135, 0.984), #ecf00d);
@@ -47,7 +84,7 @@
 	    padding-bottom: 200px;
 	    text-transform: uppercase;
 	}
-    ul{
+    .ul1{
 	display: flex;
     justify-content: space-between;
 	padding-top: 50px;
