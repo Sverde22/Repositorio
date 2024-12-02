@@ -21,12 +21,12 @@ const song= ["Sail", "Kill Your Heores", "Not Your Fault", "Panoramic View", "I 
     <div class="Bod">
         <h1 class="awol">Awolnation Songs</h1>
     <div class="songs">
-    <ul class="awollist">
+    <ul id="awollist">
         {song.map((song) => (<li>{song}</li>))}
     </ul>
     </div>
     <button id="button1">Add your Song Bro</button>
-    <input type="text" class="addsong" placeholder="Add your Song Bro" />
+    <input type="text" id="addsong" placeholder="Add your Song Bro" />
     </div>
         <footer>
             <p>Welcome to the Band Website</p>
@@ -34,7 +34,8 @@ const song= ["Sail", "Kill Your Heores", "Not Your Fault", "Panoramic View", "I 
     </div>
     <script src="/src/Java/Java.js">
 
-        </script>
+    </script>
+
         <style>
     .Bod{
         text-align: center;
